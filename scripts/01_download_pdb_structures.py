@@ -100,8 +100,8 @@ def main():
     print("   Lab: GIGA-VIN, University of Liège")
     print("=" * 70)
     
-    # Define your target structures
-    # These are the NSP complexes mentioned in your FRIA proposal
+    # Define our target structures
+    # These are the NSP complexes of interest in my proposal
     targets = {
         '7DFG': 'NSP12-NSP7-NSP8 (RdRp complex - main target)',
         '6XEZ': 'NSP12-NSP7-NSP8 (alternative conformation)',
