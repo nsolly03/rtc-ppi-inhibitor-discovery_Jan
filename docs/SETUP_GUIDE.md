@@ -727,6 +727,137 @@ CECI HPC cluster is for:
 - Downloaded initial PDB structures
 
 ---
+## Receptor Preparation - Step A Complete ✅
 
+### Overview
+
+Receptor preparation converts protein structures from PDB format to PDBQT format required for molecular docking. This process involves:
+1. Extracting relevant protein chains
+2. Converting to PDBQT format
+3. Assigning AutoDock atom types
+4. Calculating center of mass for grid box placement
+
+### Scripts Created
+
+#### 02_prepare_receptors.py (Initial - Had Issues)
+- **Issue:** Meeko command-line tool (`mk_prepare_receptor.py`) had dependency issues on Apple Silicon
+- **Problem:** Required `prody` package and had path resolution issues
+
+#### 02b_prepare_receptors_simple.py (Final Working Version)
+- **Solution:** Direct PDB to PDBQT conversion
+- **Status:** ✅ Working on Apple Silicon
+- **Note:** For production docking on HPC, VirtualFlow will add hydrogens and optimize charges
+
+### Usage
+```bash
+python scripts/02b_prepare_receptors_simple.py
+```
+
+### Target Structures and Chain Selection
+
+**Critical Learning:** Always verify which chains represent the biological assembly!
+
+| PDB ID | Chains Extracted | Proteins | Residues | Target Interface |
+|--------|------------------|----------|----------|------------------|
+| 7DFG | A, B, C | NSP12-NSP8-NSP7 | A:908, B:117, C:69 | NSP12-NSP7, NSP12-NSP8, NSP7-NSP8 |
+| 6W4H | A, B | NSP16-NSP10 | A:299, B:116 | NSP10-NSP16 |
+| 7EDI | A, B | NSP14-NSP10 | A:1024, B:139 | NSP10-NSP14 |
+
+### Important Fix: 7EDI Structure
+
+**Issue Discovered:** Initial extraction only included Chain A (NSP14) without Chain B (NSP10).
+
+**Problem:** 
+- Missing NSP10 means we couldn't visualize or target the NSP10-NSP14 interface
+- This would have resulted in incorrect binding site identification
+- Virtual screening would have targeted wrong pocket
+
+**Solution:**
+```python
+# Changed from:
+'7EDI': {'chains': ['A']}  # Only NSP14
+
+# To:
+'7EDI': {'chains': ['A', 'B']}  # NSP14 + NSP10
+```
+
+**Lesson Learned:** Always verify all protein components of a complex are present before docking.
+
+### Verification Steps
+
+After running receptor preparation, always verify:
+```bash
+# Check chain composition
+python << 'EOF'
+from Bio.PDB import PDBParser
+
+parser = PDBParser(QUIET=True)
+structure = parser.get_structure('check', 'data/docking/receptors/7EDI_extracted.pdb')
+
+for chain in structure.get_chains():
+    residues = list(chain.get_residues())
+    print(f"Chain {chain.id}: {len(residues)} residues")
+EOF
+```
+
+Expected output for complete complexes:
+- 7DFG: 3 chains (A, B, C)
+- 6W4H: 2 chains (A, B)
+- 7EDI: 2 chains (A, B)
+
+### Output Files
+
+**Location:** `data/docking/receptors/`
+
+**Files created:**
+- `7DFG_extracted.pdb` (8,765 atoms) → `7DFG_receptor.pdbqt` (813 KB)
+- `6W4H_extracted.pdb` (3,522 atoms) → `6W4H_receptor.pdbqt` (327 KB)
+- `7EDI_extracted.pdb` (now with NSP10!) → `7EDI_receptor.pdbqt` (742 KB)
+
+### Troubleshooting
+
+**Problem:** Missing chains in extracted structure
+**Solution:** 
+1. Check original PDB: `grep "^ATOM" data/targets/[PDB]_clean.pdb | awk '{print $5}' | sort -u`
+2. Update chain list in script
+3. Re-run extraction
+
+**Problem:** Meeko `mk_prepare_receptor.py` fails
+**Solution:** Use `02b_prepare_receptors_simple.py` instead (works on all systems)
+
+### For HPC Deployment
+
+These PDBQT files are basic conversions suitable for:
+- ✅ Local visualization and analysis
+- ✅ Initial testing and validation
+- ✅ Upload to CECI HPC cluster
+
+On CECI HPC, VirtualFlow will:
+- Add hydrogen atoms (pH 7.4)
+- Optimize partial charges (Gasteiger method)
+- Prepare for production docking
+
+### Scientific Rationale
+
+**Why these specific chains?**
+
+1. **7DFG (NSP12-NSP7-NSP8):**
+   - NSP12 is the RdRp (RNA-dependent RNA polymerase)
+   - NSP7 and NSP8 are essential cofactors
+   - All three proteins are needed for functional polymerase activity
+   - Disrupting any interface blocks viral replication
+
+2. **6W4H (NSP10-NSP16):**
+   - NSP16 is 2'-O-methyltransferase (mRNA cap modification)
+   - NSP10 activates NSP16 enzymatic activity
+   - Interface disruption prevents immune evasion
+
+3. **7EDI (NSP10-NSP14):**
+   - NSP14 has ExoN proofreading activity
+   - NSP10 enhances exonuclease activity ~35-fold
+   - Interface disruption reduces replication fidelity
+   - Could synergize with nucleoside analogues
+
+---
 **End of Setup Guide**
 EOF

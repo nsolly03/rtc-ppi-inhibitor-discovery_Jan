@@ -94,4 +94,49 @@ python scripts/script_name.py
 # Start Jupyter
 jupyter lab
 ```
+---
+
+## Common Issues & Quick Fixes
+
+### Conda not found
+```bash
+/opt/miniconda3/bin/conda init zsh
+# Restart terminal
+```
+
+### Wrong Python environment
+```bash
+conda activate rtc-chem
+which python  # Should show /opt/miniconda3/envs/rtc-chem/bin/python
+```
+
+### Git push rejected
+```bash
+git pull origin main --rebase
+git push origin main
+```
+
+### Missing package
+```bash
+pip install package-name
+```
+
+### Verify structure chains
+```bash
+python -c "from Bio.PDB import PDBParser; parser = PDBParser(QUIET=True); structure = parser.get_structure('check', 'file.pdb'); print([c.id for c in structure.get_chains()])"
+```
+
+---
+
+## Quality Control Checklist
+
+Before moving to next step:
+- [ ] All expected files created
+- [ ] File sizes reasonable (not 0 bytes)
+- [ ] Chain composition verified
+- [ ] Scripts run without errors
+- [ ] Changes committed to Git
+- [ ] Documentation updated
+
+---
 EOF
