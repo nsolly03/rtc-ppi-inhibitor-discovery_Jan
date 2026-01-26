@@ -1,4 +1,28 @@
-# Complete Setup Guide: RTC-PPI Inhibitor Discovery Pipeline
+## Receptor Preparation - Step A Complete
+
+### Script: 02b_prepare_receptors_simple.py
+
+**Purpose:** Convert protein structures to PDBQT format for docking
+
+**Usage:**
+```bash
+python scripts/02b_prepare_receptors_simple.py
+```
+
+**What it does:**
+1. Extracts relevant protein chains
+2. Converts PDB to PDBQT format
+3. Assigns basic AutoDock atom types
+4. Calculates center of mass for grid box placement
+
+**Output files:**
+- `7DFG_receptor.pdbqt` - Main target (RdRp complex)
+- `6W4H_receptor.pdbqt` - NSP10-NSP16 interface
+- `7EDI_receptor.pdbqt` - NSP10-NSP14 interface
+
+**Note:** For production docking on CECI HPC, VirtualFlow will optimize these structures (add hydrogens, refine charges).
+
+---# Complete Setup Guide: RTC-PPI Inhibitor Discovery Pipeline
 
 **Author:** Olivier Nsekuye  
 **Date:** January 2025  
