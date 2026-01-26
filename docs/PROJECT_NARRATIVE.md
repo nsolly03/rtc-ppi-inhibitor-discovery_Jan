@@ -1081,7 +1081,7 @@ On difficult days, I remind myself:
 ### Gratitude
 
 I'm grateful for:
-- FRIA fellowship funding this work
+- ARES funding this work
 - Prof. Twizere's mentorship and trust
 - GIGA-VIN lab colleagues' support
 - CECI HPC infrastructure access
