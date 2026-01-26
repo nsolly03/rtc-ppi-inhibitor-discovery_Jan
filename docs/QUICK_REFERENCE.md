@@ -1,5 +1,18 @@
 # Quick Reference Guide
 
+## Auto-Backup Script
+```bash
+# Quick backup with custom message
+bash scripts/git_backup.sh "Description of changes"
+
+# Quick backup with automatic timestamp
+bash scripts/git_backup.sh
+```
+
+Use this at the end of each work session to save your progress to GitHub.
+
+---# Quick Reference Guide
+
 ## Conda Commands
 ```bash
 # Activate environment
