@@ -3,8 +3,8 @@
 **Author:** Olivier Nsekuye  
 **Institution:** GIGA-VIN Laboratory, University of Liège  
 **Supervisor:** Prof. Jean-Claude Twizere  
-**Funding:** FRIA Doctoral Fellowship 2025  
-**Project Duration:** 2025-2029
+**Funding:** ARES                                   
+**Project Duration:** 2025-2028
 
 ---
 
