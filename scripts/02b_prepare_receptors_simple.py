@@ -89,7 +89,7 @@ def main():
     targets = {
         '7DFG': {'description': 'NSP12-NSP7-NSP8', 'chains': ['A', 'B', 'C']},
         '6W4H': {'description': 'NSP10-NSP16', 'chains': ['A', 'B']},
-        '7EDI': {'description': 'NSP10-NSP14', 'chains': ['A']}
+        '7EDI': {'description': 'NSP10-NSP14', 'chains': ['A', 'B']}
     }
     
     input_dir = 'data/targets'
