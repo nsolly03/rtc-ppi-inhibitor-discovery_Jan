@@ -87,9 +87,26 @@ def main():
     print("=" * 70)
     
     targets = {
-        '7DFG': {'description': 'NSP12-NSP7-NSP8', 'chains': ['A', 'B', 'C']},
-        '6W4H': {'description': 'NSP10-NSP16', 'chains': ['A', 'B']},
-        '7EDI': {'description': 'NSP10-NSP14', 'chains': ['A', 'B']}
+        '7DFG': {
+            'description': 'NSP12-NSP7-NSP8 (RdRp complex)',
+            'chains': ['A', 'B', 'C']
+        },
+        '6XEZ': {
+            'description': 'NSP12-NSP7-NSP8 (alternative conformation)',
+            'chains': ['A', 'B', 'C']
+        },
+        '6W4H': {
+            'description': 'NSP10-NSP16 (2-O-MTase)',
+            'chains': ['A', 'B']
+        },
+        '7EDI': {
+            'description': 'NSP10-NSP14 (ExoN complex)',
+            'chains': ['A', 'B']
+        },
+        '6W9C': {
+            'description': 'NSP13 (Helicase)',
+            'chains': ['A', 'B', 'C']
+        }
     }
     
     input_dir = 'data/targets'
@@ -124,7 +141,7 @@ def main():
             print(f"\nError: {e}")
     
     print("\n" + "=" * 70)
-    print(f"COMPLETE! Prepared {success}/3 receptors")
+    print(f"COMPLETE! Prepared {success}/5 receptors")
     print("=" * 70)
 
 
