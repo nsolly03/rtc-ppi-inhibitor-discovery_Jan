@@ -1,0 +1,59 @@
+======================================================================
+ZINC15 FULL LIBRARY DOWNLOAD INSTRUCTIONS
+======================================================================
+
+For your PhD project screening 1.4+ billion compounds:
+
+STEP 1: ACCESS ZINC15 DATABASE
+----------------------------------------------------------------------
+URL: https://zinc15.docking.org/
+Create free account (optional but recommended)
+
+STEP 2: SELECT COMPOUND LIBRARIES
+----------------------------------------------------------------------
+Navigate to: Catalogs → In Stock
+Available: ~1.48 billion compounds
+
+STEP 3: APPLY FILTERS
+----------------------------------------------------------------------
+Property filters:
+  ✓ Molecular Weight: 150-500 Da
+  ✓ LogP: -0.4 to 5.6
+  ✓ H-bond donors: ≤5
+  ✓ H-bond acceptors: ≤10
+  ✓ Rotatable bonds: ≤10
+  ✓ Drug-like subset
+
+STEP 4: DOWNLOAD FORMAT
+----------------------------------------------------------------------
+Format: SMILES (.smi)
+Expected size: ~50-100 GB (compressed)
+Download on HPC cluster (NOT local Mac)
+
+STEP 5: ENAMINE REAL DATABASE
+----------------------------------------------------------------------
+URL: https://enamine.net/compound-collections/real-compounds
+Available: ~200 million synthesizable compounds
+Access: Request academic license
+Format: Download SMILES library
+
+STEP 6: HPC STORAGE LOCATIONS
+----------------------------------------------------------------------
+CECI cluster paths:
+  /data/your-username/zinc15/raw/
+  /data/your-username/enamine/raw/
+
+STEP 7: NEXT STEPS
+----------------------------------------------------------------------
+1. Transfer libraries to HPC
+2. Run filtering script (04_filter_ligands.py)
+3. Convert to 3D structures with VirtualFlow
+4. Prepare for docking
+
+======================================================================
+ESTIMATED TIMELINE
+======================================================================
+Download: 1-3 days (on HPC with fast connection)
+Filtering: 2-5 days (parallel processing)
+Preparation: 1-2 weeks (VirtualFlow pipeline)
+Total: 2-4 weeks before docking can begin

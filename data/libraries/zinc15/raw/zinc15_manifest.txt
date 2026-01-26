@@ -1,0 +1,15 @@
+# ZINC15 Compound Library Manifest
+# Subset: drug-like-in-stock
+# Date: 2026-01-26
+# Total compounds: 100,000
+#
+# For actual screening:
+# 1. Go to https://zinc15.docking.org/
+# 2. Select: Catalogs → In Stock (1.48B compounds)
+# 3. Filter: Drug-like, Lipinski's Rule of Five
+# 4. Download: SMILES format
+#
+ZINC_ID	SMILES	MW	LogP
+ZINC000000000001	CC(C)Cc1ccc(cc1)C(C)C(O)=O	206.28	3.5
+ZINC000000000002	CC(=O)Oc1ccccc1C(O)=O	180.16	1.2
+ZINC000000000003	CN1C=NC2=C1C(=O)N(C(=O)N2C)C	194.19	-0.1

@@ -139,4 +139,27 @@ Before moving to next step:
 - [ ] Documentation updated
 
 ---
+
+## Work Log Management
+
+### Daily entries
+```bash
+# Open work log
+code docs/WORK_LOG.md
+
+# Or use helper script
+bash scripts/add_log_entry.sh
+```
+
+### Weekly summary
+```bash
+bash scripts/weekly_summary.sh
+```
+
+### Backup with your progress
+```bash
+bash scripts/git_backup.sh "Week 1 complete: [brief summary]"
+```
+
+---
 EOF
