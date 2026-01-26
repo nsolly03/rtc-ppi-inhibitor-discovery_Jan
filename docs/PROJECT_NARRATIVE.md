@@ -1113,7 +1113,7 @@ Year 4: Thesis writing, defense preparation
 **Travel:** €10,000 (conferences, collaborations)
 **Publication:** €5,000 (open access fees)
 
-**Total:** ~€170,000 (covered by FRIA fellowship + lab resources)
+**Total:** ~€170,000 (covered by ARES ????? + lab resources)
 
 ### C. Risk Mitigation
 
