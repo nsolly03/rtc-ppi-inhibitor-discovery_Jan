@@ -162,4 +162,27 @@ bash scripts/git_backup.sh "Week 1 complete: [brief summary]"
 ```
 
 ---
+
+## Documentation Updates
+
+### Daily work log
+```bash
+nano docs/WORK_LOG.md
+# Add entry for today under current date
+```
+
+### Project narrative
+```bash
+nano docs/PROJECT_NARRATIVE.md
+# Update "Daily Progress" section
+# Add to "Lessons Learned" if applicable
+```
+
+### Update all and backup
+```bash
+# After updating any documentation
+bash scripts/git_backup.sh "Updated documentation: [brief description]"
+```
+
+---
 EOF
