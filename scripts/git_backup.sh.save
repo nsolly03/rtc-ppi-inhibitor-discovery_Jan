@@ -1,7 +1,5 @@
-#!/bin/bash
+echo "View at: https://github.com/nsolly03/rtc-ppi-inhibitor-discovery_Ja#!/bin/bash
 # Automatic Git backup script
-# Author: Olivier Nsekuye
-# Usage: bash scripts/git_backup.sh "your commit message"
 
 echo "Backing up to GitHub..."
 
@@ -16,4 +14,5 @@ fi
 git push origin main
 
 echo "Backup complete!"
-echo "View at: https://github.com/nsolly03/rtc-ppi-inhibitor-discovery_Jan"
+echo "View at: https://github.com/nsolly03/rtc-ppi-inhibitor-discovery"
+
