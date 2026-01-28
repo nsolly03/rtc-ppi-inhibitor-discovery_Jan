@@ -21,24 +21,24 @@
 | # | Status | Title | First Author | Year | Relevance | Notes File |
 |---|--------|-------|--------------|------|-----------|------------|
 | 01 | ✅ | AI-guided pipeline for PPI drug discovery identifies SARS-CoV-2 inhibitor | Trepte | 2024 | ⭐⭐⭐⭐⭐ | Paper_01_Trepte_2024_NSP10-NSP16_Inhibitor.md |
-| 02 | 📖 | [Next paper title] | | | | |
-| 03 | 📖 | | | | | |
-
+| 02 | ✅ | Nanobodies against NSP9 inhibit viral replication | Venit | 2023 | ⭐⭐⭐⭐ (preprint) | Paper_02_Venit_2023_NSP9_Nanobody_Inhibitor.md |
+| 03 | 📖 | [Next paper] | | | | |
 ---
 
 ## Reading Schedule
 
 ### Week 2 (Jan 27 - Feb 2, 2025)
 - [x] Paper 01: Trepte et al. 2024 (NSP10-NSP16 inhibitor)
-- [ ] Paper 02: [Next paper]
+- [x] Paper 02: Venit et al. 2023 (NSP9 nanobody) - **PREPRINT**
 - [ ] Paper 03: [Next paper]
 
-### Week 3
-- [ ] Paper 04-06
+### Priority Papers (Next to Read)
 
-### Week 4
-- [ ] Paper 07-09
-
+1. **Esposito et al. (2021)** - **URGENT** - NSP9 epitope mapping (companion to Paper 02)
+2. **Rosas-Lemus et al. (2020)** - 6W4H structure paper (NSP10-NSP16)
+3. **Lin et al. (2021)** - 7EDI structure paper (NSP10-NSP14)
+4. **Yan et al. (2021)** - Extended RTC structure (includes NSP9)
+5. [Other high-priority papers]
 ---
 
 ## Priority Papers (Next to Read)

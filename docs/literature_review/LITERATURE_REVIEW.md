@@ -82,6 +82,49 @@
   - Top hits: ~-8.5 kcal/mol docking scores
   - See detailed notes: `notes/Paper_01_Trepte_2024_NSP10-NSP16_Inhibitor.md`
 ---
+### NSP9 (RTC RNA-binding component)
+
+#### Paper 2: Nanobodies against SARS-CoV-2 non-structural protein Nsp9 inhibit viral replication by targeting innate immunity
+
+- **Authors:** Venit, Blavier, Maseko, Shu, Esposito, **Twizere**, Percipalle, et al.
+- **Journal/Year:** bioRxiv preprint, 2023 (NOT PEER-REVIEWED)
+- **PDB Structures:** None new (refers to previous NSP9 structures)
+- **Key Findings:**
+  - Developed anti-NSP9 nanobody (2NSP23) delivered as LNP-encapsulated mRNA
+  - **EC50 = 1.8 µM** (comparable to Remdesivir), CC50 >30 µM
+  - >90% inhibition of Wuhan, Delta, Mu, Omicron; ~60% inhibition of Beta variant
+  - Mechanism: Stabilizes non-functional tetrameric NSP9 (functional form is monomer/dimer)
+  - Prevents RTC assembly → blocks viral RNA replication
+  - RNA-seq: Rescues host cell transcriptome disrupted by infection
+  - **Activates innate immune response genes BEFORE infection** (prophylactic potential)
+  
+- **NSP9 Function:**
+  - RNA-binding protein essential for RTC assembly
+  - Functions as monomer/dimer in replication complex
+  - Dimerization interface overlaps with NSP12 binding site
+  - Tetramerization = non-functional state
+  
+- **Interface Residues:**
+  - **NOT detailed in this paper** - refers to Esposito et al. 2021 for epitope mapping
+  - Nanobody binds at/near dimerization interface
+  - Binding prevents functional oligomeric state
+  
+- **Hot Spots:**
+  - **NOT explicitly defined** - need to read Esposito et al. 2021
+  - Dimerization interface residues critical for function
+  
+- **Notes:**
+  - **PREPRINT** - not yet peer-reviewed
+  - **Prof. Twizere is co-author** - direct collaboration opportunity!
+  - Validates RTC targeting approach
+  - NSP9 highly conserved across coronaviruses (low mutation rate)
+  - Different approach (nanobody) but proves concept
+  - Dual mechanism: RTC disruption + immune activation
+  - Could be alternative/complementary target to NSP10-NSP16
+  - Immune genes activated: RSAD2, OAS1/2/3, IFIT1/2/3, ISG15, MX1
+  - Mitochondrial genes rescued: COX5B, NDUFS8, MRPL9, MRPL24
+  - See detailed notes: `notes/Paper_02_Venit_2023_NSP9_Nanobody_Inhibitor.md`
+  - **MUST READ:** Esposito et al. 2021 for structural details
 
 ## Summary Tables
 
@@ -121,6 +164,17 @@
 | NSP10-NSP16 | NSP10-derived peptides | Variable (µM-mM) | Interface mimicry | Wang et al. 2015 |
 | NSP10-NSP16 | Short peptides | Variable (µM-mM) | Interface disruption | Ke et al. 2012 |
 
+
+| Target | Compound | IC50 / Kd | Binding Mode | Reference |
+|--------|----------|-----------|--------------|-----------|
+| NSP10-NSP16 | Compound 459 | Kd 12.97 µM (NSP10), IC50 9.2 µM (PPI), IC50 39.5 µM (antiviral) | Binds NSP10 near Lys93, blocks NSP16 interaction | Trepte et al. 2024 |
+| NSP10-NSP16 | NSP10-derived peptides | Variable (µM-mM) | Interface mimicry | Wang et al. 2015 |
+| NSP10-NSP16 | Short peptides | Variable (µM-mM) | Interface disruption | Ke et al. 2012 |
+| **NSP9** | **2NSP23 Nanobody** | **EC50 1.8 µM (antiviral)** | **Stabilizes non-functional NSP9 tetramer, prevents RTC assembly** | **Venit et al. 2023 (preprint)** |
+| **NSP9** | **2NSP90 Nanobody** | **Not detailed** | **Similar to 2NSP23** | **Venit et al. 2023 (preprint)** |
+
+
+
 | Target | Compound | IC50 | Binding Mode | Reference |
 |--------|----------|------|--------------|-----------|
 | | | | | |
@@ -141,6 +195,16 @@
 - Docking box: 75.647 × 16.822 × 17.631 Å (large, asymmetric)
 - Successful hits: docking scores ~-8.5 kcal/mol
 
+**NSP9 (RTC RNA-binding protein):**
+- **VALIDATED AS DRUGGABLE** (Venit et al. 2023 preprint)
+- 2NSP23 nanobody demonstrates NSP9 can be targeted effectively
+- Mechanism: Stabilization of non-functional tetrameric state
+- Oligomerization interface is druggable
+- EC50 1.8 µM comparable to approved antivirals (Remdesivir)
+- Target site: **Dimerization interface** (overlaps with NSP12 binding)
+- Success with nanobodies suggests small molecules could work too
+- Dual mechanism possible: Direct RTC disruption + immune activation
+
 ### Conservation Analysis
 
 **NSP10-NSP16 Interface:**
@@ -148,6 +212,15 @@
 - Lys93 position conserved across coronavirus groups
 - Pan-coronavirus targeting potential
 - Low mutation frequency expected (interface under structural constraint)
+
+**NSP9:**
+- **Highly conserved across coronaviruses** (Venit et al. 2023, Abbasian et al. 2023)
+- **"Extremely low degree of mutagenicity"**
+- 2NSP23 works on multiple variants (>90% inhibition)
+- Beta variant slightly less susceptible (~60%)
+- Pan-coronavirus targeting potential
+- Less prone to resistance than Spike protein
+
 
 ### Structural Features
 
@@ -158,6 +231,17 @@
 - Supporting hydrophobic interactions
 - Flexible interface residues (12 residues) used in virtual screening
 - MTase activity dependent on NSP10-NSP16 interaction
+
+
+**NSP9:**
+- Small RNA-binding protein (~12 kDa)
+- Oligomerization-dependent function:
+  - **Monomer/dimer = FUNCTIONAL** for RTC assembly
+  - **Tetramer = NON-FUNCTIONAL** (stabilized by 2NSP23)
+- Dimerization interface = NSP12 binding site
+- Located in RTC catalytic center
+- Specific epitope mapping by NMR (Esposito et al. 2021)
+- Strong tendency to oligomerize in vitro
 
 ### Challenges Identified
 
@@ -176,6 +260,26 @@
 - Ultra-large virtual screening feasible (~350M compounds)
 - Combination therapy potential (compound 459 + AZ1 additive effects)
 - Pan-coronavirus potential due to conservation
+
+
+
+**For NSP9 Targeting:**
+- Nanobody approach different from small molecules
+- Need structural details of epitope (read Esposito et al. 2021)
+- Oligomerization interface may be flat/large
+- Beta variant shows partial resistance
+- Clinical translation of mRNA-LNP delivery uncertain
+- Preprint status - not yet peer-reviewed
+
+**Opportunities:**
+- Validated druggable target with experimental proof
+- Dual mechanism: RTC + immune activation
+- Pan-coronavirus potential (conservation)
+- Could combine with NSP10-NSP16 targeting
+- Prof. Twizere collaboration possible
+- Prophylactic potential (immune priming)
+
+
 ### Druggability Assessment
 - 
 
