@@ -1,0 +1,50 @@
+{
+  "pdb_id": "6W4H",
+  "note": "Hot spot K76-D107 in structure (paper refers to K93-D106 in reference sequence)",
+  "chains": {
+    "nsp10": "B",
+    "nsp16": "A"
+  },
+  "hot_spots": {
+    "nsp10_lys": {
+      "sequence_position": 76,
+      "pdb_number": 4346,
+      "chain": "B",
+      "ca_coord": [
+        74.53600311279297,
+        12.890000343322754,
+        9.62399959564209
+      ],
+      "center": [
+        75.8825454711914,
+        11.640777587890625,
+        10.087332725524902
+      ]
+    },
+    "nsp16_asp": {
+      "sequence_position": 107,
+      "pdb_number": 6904,
+      "chain": "A",
+      "ca_coord": [
+        78.18599700927734,
+        14.902999877929688,
+        12.640999794006348
+      ]
+    },
+    "distance": 5.145572185516357,
+    "interaction": "Salt bridge"
+  },
+  "grid_box": {
+    "center_x": 75.8825454711914,
+    "center_y": 11.640777587890625,
+    "center_z": 10.087332725524902,
+    "size_x": 25.0,
+    "size_y": 25.0,
+    "size_z": 25.0
+  },
+  "interface": {
+    "total_residues": 22,
+    "nsp10_residues": 16,
+    "nsp16_residues": 6
+  }
+}

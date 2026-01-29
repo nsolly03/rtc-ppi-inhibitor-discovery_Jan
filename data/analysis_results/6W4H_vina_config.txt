@@ -1,0 +1,26 @@
+# AutoDock Vina Configuration for 6W4H NSP10-NSP16
+# Target: NSP10 K76 interface (PDB 4346)
+# Hot spot: K76 (NSP10) - D107 (NSP16)
+# Distance: 5.15 Å
+
+receptor = 6W4H_prepared.pdbqt
+ligand = ligand.pdbqt
+
+# Grid box center (Å)
+center_x = 75.883
+center_y = 11.641
+center_z = 10.087
+
+# Grid box size (Å)
+size_x = 25.0
+size_y = 25.0
+size_z = 25.0
+
+# Docking parameters
+exhaustiveness = 8
+num_modes = 9
+energy_range = 3
+
+# Output
+out = docking_output.pdbqt
+log = docking_log.txt
