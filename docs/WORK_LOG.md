@@ -260,3 +260,140 @@ Excellent first day! Set up complete pipeline from structure download to ligand 
 ---
 
 **Last Updated:** January 26, 2025
+## January 28, 2025 - Literature Review Session 1
+
+### Session 4: Paper 01 Analysis (Trepte et al. 2024)
+
+**Time:** [Your session time]
+
+**Activities:**
+- Read and comprehensively analyzed Paper 01: Trepte et al. 2024
+- Created detailed annotation file (Paper_01_Trepte_2024_NSP10-NSP16_Inhibitor.md)
+- Updated LITERATURE_REVIEW.md with NSP10-NSP16 findings
+- Updated summary tables (Interface Residues, Hot Spots, Inhibitors)
+- Created PAPERS_TRACKING.md system
+- Committed to GitHub
+
+**Key Findings:**
+- NSP10-NSP16 interface is VALIDATED as druggable
+- Critical hot spots: NSP10 Lys93 ↔ NSP16 Asp106 (salt bridge)
+- Compound 459: Kd 12.97 µM, IC50 9.2 µM (PPI disruption), IC50 39.5 µM (antiviral)
+- Virtual screening of ~350M compounds successful
+- Docking box: 75.647 × 16.822 × 17.631 Å centered on Lys93
+- Top hits: ~-8.5 kcal/mol docking scores
+
+**Action Items Generated:**
+- Download 6W4H structure
+- Visualize Lys93-Asp106 interaction
+- Extract coordinates for grid box definition
+- Install PDBePISA
+- Plan docking box centered on Lys93
+- Consider Enamine REAL library access
+
+**Files Created/Modified:**
+- `docs/literature_review/notes/Paper_01_Trepte_2024_NSP10-NSP16_Inhibitor.md` (NEW)
+- `docs/literature_review/LITERATURE_REVIEW.md` (UPDATED)
+- `docs/literature_review/PAPERS_TRACKING.md` (NEW)
+- `docs/WORK_LOG.md` (THIS FILE)
+
+**Next Steps:**
+- Continue with Paper 02 or proceed with immediate action items
+- Download 6W4H structure
+- Begin visualization of interface
+
+**Status:** ✅ Paper 01 complete and documented
+
+## January 28, 2025 - Literature Review Session 2
+
+### Session 5: Paper 02 Analysis (Venit et al. 2023 - PREPRINT)
+
+**Time:** [Your session time]
+
+**Activities:**
+- Read and comprehensively analyzed Paper 02: Venit et al. 2023 (bioRxiv preprint)
+- Created detailed annotation file (Paper_02_Venit_2023_NSP9_Nanobody_Inhibitor.md)
+- Updated LITERATURE_REVIEW.md with NSP9 findings
+- Added NSP9 section to literature review
+- Updated summary tables (Known Inhibitors)
+- Updated PAPERS_TRACKING.md
+- Committed to GitHub
+
+**Key Findings:**
+- NSP9 is VALIDATED druggable RTC target (EC50 1.8 µM)
+- 2NSP23 nanobody stabilizes non-functional tetrameric NSP9
+- Prevents RTC assembly → blocks viral replication
+- Works on multiple variants (>90% inhibition Wuhan, Delta, Mu, Omicron)
+- RNA-seq: Rescues host cell transcriptome, activates innate immunity
+- Dual mechanism: Direct (RTC) + Indirect (immune activation)
+- **Prof. Twizere is co-author** - collaboration opportunity!
+
+**Important Notes:**
+- **PREPRINT** - not yet peer-reviewed
+- Different approach (nanobody vs small molecule)
+- Structural details in companion paper (Esposito et al. 2021)
+- NSP9 highly conserved (low mutation rate)
+- Potential alternative/complementary target to NSP10-NSP16
+
+**Action Items Generated:**
+- **URGENT:** Read Esposito et al. 2021 for NSP9 epitope details
+- Download NSP9 crystal structure
+- Ask Prof. Twizere about:
+  - NSP9 structural data
+  - Adding NSP9 to target list
+  - Collaboration for validation
+  - Multi-target approach feasibility
+- Decision point: NSP9 as primary/backup/complementary target?
+
+**Files Created/Modified:**
+- `docs/literature_review/notes/Paper_02_Venit_2023_NSP9_Nanobody_Inhibitor.md` (NEW)
+- `docs/literature_review/LITERATURE_REVIEW.md` (UPDATED - added NSP9 section)
+- `docs/literature_review/PAPERS_TRACKING.md` (UPDATED)
+- `docs/WORK_LOG.md` (THIS FILE)
+
+**Next Steps:**
+- **Option A:** Continue with Paper 03
+- **Option B:** Read Esposito et al. 2021 (companion paper for NSP9)
+- **Option C:** Contact Prof. Twizere about NSP9
+- **Option D:** Start working on immediate action items from Paper 01
+
+**Status:** ✅ Paper 02 complete and documented (with preprint caveat)
+
+## January 28, 2025 - Session 6: 6W4H Structure Analysis
+
+**MAJOR BREAKTHROUGH:** Discovered residue numbering discrepancy
+
+**Activities:**
+1. Downloaded 6W4H structure from PDB
+2. Analyzed residue numbering system
+3. Discovered critical discrepancy between paper and structure
+4. Identified actual hot spot residues
+5. Calculated grid box coordinates
+6. Generated analysis files
+
+**Critical Finding:**
+- Paper (Trepte et al. 2024) refers to K93-D106
+- 6W4H PDB uses polyprotein numbering: K76-D107
+- Distance: 5.15 Å (salt bridge likely)
+- Grid box center: (75.883, 11.641, 10.087)
+
+**Files Created:**
+- `scripts/analyze_6W4H_corrected.py` - Main analysis
+- `scripts/check_6W4H_residues.py` - Residue verification
+- `scripts/find_hotspots.py` - Hot spot discovery
+- `data/analysis_results/6W4H_analysis.json` - Data
+- `data/analysis_results/6W4H_vina_config.txt` - Docking config
+- `data/analysis_results/6W4H_interface_residues.csv` - Interface list
+- `docs/6W4H_ANALYSIS_SUMMARY.md` - Complete documentation
+
+**Interface Composition:**
+- Total: 22 residues
+- NSP10: 16 residues
+- NSP16: 6 residues
+- Features: K-D salt bridge, multiple cysteines, hydrophobic core
+
+**Next Steps:**
+- Week 3-4: Install and run fpocket
+- Validate K76-D107 site is in identified pocket
+- Prepare structure for docking (Week 5)
+
+**Status:** ✅ Week 2 objectives COMPLETE - ahead of schedule!
