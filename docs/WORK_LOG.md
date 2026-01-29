@@ -397,3 +397,13 @@ Excellent first day! Set up complete pipeline from structure download to ligand 
 - Prepare structure for docking (Week 5)
 
 **Status:** ✅ Week 2 objectives COMPLETE - ahead of schedule!
+
+### Important Note: Residue Numbering
+
+**Discrepancy discovered and resolved:**
+- Paper (Trepte et al.) uses individual protein numbering: K93-D106
+- 6W4H PDB uses polyprotein numbering: K76-D107
+- **SAME FUNCTIONAL HOT SPOT** - just different labeling system
+- See `docs/RESIDUE_NUMBERING_EXPLANATION.md` for full details
+
+**For thesis:** Always mention both numbering systems and explain the conversion.
