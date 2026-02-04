@@ -1,0 +1,17 @@
+Property,Value
+PDB ID,6W4H
+Analysis Date,2026-01-29
+NSP10 Chain,B
+NSP16 Chain,A
+Hot Spot (Paper),K93-D106
+Hot Spot (6W4H),K76-D107
+NSP10 K76 PDB Number,4346
+NSP16 D107 PDB Number,6904
+Distance,5.15 Å
+Interaction Type,Salt bridge
+Interface Residues,"22 (16 NSP10, 6 NSP16)"
+Grid Box Center X,75.883 Å
+Grid Box Center Y,11.641 Å
+Grid Box Center Z,10.087 Å
+Grid Box Size,25 × 25 × 25 Å³
+Status,✓ Ready for docking
