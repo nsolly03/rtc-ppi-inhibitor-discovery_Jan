@@ -1,0 +1,6 @@
+PDB,Complex,Function,Chains,Total_Residues,PPIs,Priority,Role,Analysis_Status
+6W4H,NSP10-NSP16,2'-O-MTase,2,415,1,High,Immune evasion,✅ Complete
+7DFG,NSP12-NSP7-NSP8,RdRp holoenzyme,6,1228,2-3,⭐ Highest,Replication core,⏳ Pending
+6XEZ,NSP12-NSP7-NSP8,RdRp (alternative),8,2633,2-3,High,Comparison,⏳ Pending
+7EDI,NSP10-NSP14,ExoN complex,34,3048,1,High,Proofreading,⏳ Pending
+6W9C,NSP13,Helicase,3,926,1,Medium,RNA unwinding,⏳ Pending

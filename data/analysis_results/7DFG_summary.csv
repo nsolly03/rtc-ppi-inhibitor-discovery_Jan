@@ -1,0 +1,27 @@
+Property,Value
+PDB ID,7DFG
+Analysis Date,2026-02-06
+Approach,Discovery-based (no prior knowledge)
+,
+CHAIN ASSIGNMENTS,
+NSP12,Chain A
+NSP7,Chain C
+NSP8,Chain B
+,
+INTERFACE 1: NSP12-NSP7,
+Hot Spots Found,1
+Strongest Hot Spot,GLU431-LYS2
+Distance,3.29 Å
+Type,Salt bridge
+Interface Residues,"12 (9 NSP12, 3 NSP7)"
+Grid Box Center,"(136.9, 101.1, 152.9)"
+Grid Box Size,25 × 25 × 25 Å
+,
+INTERFACE 2: NSP12-NSP8,
+Hot Spots Found,2
+Strongest Hot Spot,ARG331-ASP112
+Distance,3.02 Å
+Type,Salt bridge
+Interface Residues,"23 (16 NSP12, 7 NSP8)"
+Grid Box Center,"(133.0, 168.4, 145.1)"
+Grid Box Size,25 × 25 × 25 Å

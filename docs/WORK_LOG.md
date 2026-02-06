@@ -536,3 +536,134 @@ Excellent first day! Set up complete pipeline from structure download to ligand 
 - Consolidated all recent analyses
 
 **Status:** Documentation current, ready for Week 3-4 work
+
+---
+
+## February 6, 2026 - Week 3, Day 3
+
+### 7DFG Interface Discovery Analysis
+
+**Completed:**
+- ✅ Created complete discovery-based analysis notebook: `05_7DFG_interface_discovery.ipynb`
+- ✅ Implemented systematic charged interaction screening (Lys-Asp, Arg-Asp, etc.)
+- ✅ Built automated chain detection for NSP12, NSP7, NSP8
+- ✅ Integrated py3Dmol visualizations
+- ✅ Set up complete workflow: discovery → mapping → grid boxes → export
+
+**Notebook Structure (10 Sections):**
+1. Setup and imports
+2. Structure parsing with automatic chain detection
+3. 3D visualization (py3Dmol)
+4A. NSP12-NSP7 hot spot discovery
+4B. NSP12-NSP8 hot spot discovery
+5A. NSP12-NSP7 visualization
+5B. NSP12-NSP8 visualization
+6A. NSP12-NSP7 interface mapping (10 Å)
+6B. NSP12-NSP8 interface mapping (10 Å)
+7. Docking grid box definition (25×25×25 Ų)
+8. Summary table
+9. Export results (CSV + JSON)
+10. Conclusions
+
+**Methodology:**
+- Discovery-based approach (no prior knowledge required)
+- Distance cutoffs: <5 Å for hot spots, <10 Å for interfaces
+- Identifies ALL charged interactions, ranks by distance
+- Exports docking-ready grid box coordinates
+
+**Next Steps:**
+- Run 05_7DFG_interface_discovery.ipynb to discover hot spots
+- Analyze results and compare with 6W4H findings
+- Prepare for fpocket pocket identification
+- Continue with 6XEZ analysis (alternative RdRp structure)
+
+**Files Created:**
+- `notebooks/05_7DFG_interface_discovery.ipynb` (complete analysis)
+- Scripts: `add_sections_5_10_fixed.py`, `add_sections_7_10.py`
+
+---
+
+## February 6, 2026 - Week 3, Day 3
+
+### 7DFG Interface Discovery Analysis
+
+**Completed:**
+- ✅ Created complete discovery-based analysis notebook: `05_7DFG_interface_discovery.ipynb`
+- ✅ Implemented systematic charged interaction screening (Lys-Asp, Arg-Asp, etc.)
+- ✅ Built automated chain detection for NSP12, NSP7, NSP8
+- ✅ Integrated py3Dmol visualizations
+- ✅ Set up complete workflow: discovery → mapping → grid boxes → export
+
+**Notebook Structure (10 Sections):**
+1. Setup and imports
+2. Structure parsing with automatic chain detection
+3. 3D visualization (py3Dmol)
+4A. NSP12-NSP7 hot spot discovery
+4B. NSP12-NSP8 hot spot discovery
+5A. NSP12-NSP7 visualization
+5B. NSP12-NSP8 visualization
+6A. NSP12-NSP7 interface mapping (10 Å)
+6B. NSP12-NSP8 interface mapping (10 Å)
+7. Docking grid box definition (25×25×25 Ų)
+8. Summary table
+9. Export results (CSV + JSON)
+10. Conclusions
+
+**Methodology:**
+- Discovery-based approach (no prior knowledge required)
+- Distance cutoffs: <5 Å for hot spots, <10 Å for interfaces
+- Identifies ALL charged interactions, ranks by distance
+- Exports docking-ready grid box coordinates
+
+**Next Steps:**
+- Run 05_7DFG_interface_discovery.ipynb to discover hot spots
+- Analyze results and compare with 6W4H findings
+- Prepare for fpocket pocket identification
+- Continue with 6XEZ analysis (alternative RdRp structure)
+
+**Files Created:**
+- `notebooks/05_7DFG_interface_discovery.ipynb` (complete analysis)
+- Scripts: `add_sections_5_10_fixed.py`, `add_sections_7_10.py`
+
+LOG_EOF
+
+echo "✓ Work log updated"
+```
+
+---
+
+## Step 3: What to Expect from the Analysis
+
+When you run the notebook, you'll see:
+
+**Section 2 Output:**
+```
+Chain A: 908 residues → NSP12 (RdRp)
+Chain C: 69 residues → NSP7 (cofactor)
+Chain B or G: ~106-117 residues → NSP8 (cofactor)
+```
+
+**Section 4A Output (NSP12-NSP7):**
+```
+✓ DISCOVERED X charged interactions!
+
+Charged Interactions (sorted by distance):
+NSP12_Res  NSP12_PDB  NSP7_Res  NSP7_PDB  Distance  Type
+...
+
+🔥 STRONGEST HOT SPOT (NSP12-NSP7):
+  LYSXXX (NSP12) ←→ ASPYYY (NSP7)
+  Distance: X.XX Å
+  Type: Salt bridge / Ionic interaction
+```
+
+**Section 7 Output (Grid Boxes):**
+```
+FOR AUTODOCK VINA CONFIG FILES:
+# NSP12-NSP7
+center_x = XXX.XXX
+center_y = XXX.XXX
+center_z = XXX.XXX
+size_x = 25.0
+size_y = 25.0
+size_z = 25.0

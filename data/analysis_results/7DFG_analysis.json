@@ -1,0 +1,50 @@
+{
+  "pdb_id": "7DFG",
+  "analysis_date": "2026-02-06",
+  "approach": "discovery-based",
+  "chains": {
+    "nsp12": "A",
+    "nsp8": "B",
+    "nsp7": "C"
+  },
+  "interfaces": {
+    "NSP12-NSP7": {
+      "hot_spots_count": 1,
+      "strongest_hot_spot": {
+        "nsp12_residue": "GLU431",
+        "nsp7_residue": "LYS2",
+        "distance": 3.290841579437256,
+        "type": "Salt bridge"
+      },
+      "interface_residues": 12,
+      "grid_box": {
+        "center_x": 136.8800048828125,
+        "center_y": 101.08499908447266,
+        "center_z": 152.89599609375,
+        "size_x": 25.0,
+        "size_y": 25.0,
+        "size_z": 25.0,
+        "hot_spot": "GLU431-LYS2"
+      }
+    },
+    "NSP12-NSP8": {
+      "hot_spots_count": 2,
+      "strongest_hot_spot": {
+        "nsp12_residue": "ARG331",
+        "nsp8_residue": "ASP112",
+        "distance": 3.020967960357666,
+        "type": "Salt bridge"
+      },
+      "interface_residues": 23,
+      "grid_box": {
+        "center_x": 133.00599670410156,
+        "center_y": 168.4239959716797,
+        "center_z": 145.1060028076172,
+        "size_x": 25.0,
+        "size_y": 25.0,
+        "size_z": 25.0,
+        "hot_spot": "ARG331-ASP112"
+      }
+    }
+  }
+}
