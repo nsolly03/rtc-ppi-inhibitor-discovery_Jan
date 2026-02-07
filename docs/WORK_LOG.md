@@ -667,3 +667,31 @@ center_z = XXX.XXX
 size_x = 25.0
 size_y = 25.0
 size_z = 25.0
+
+---
+
+## February 7, 2026 - CRITICAL: Structure Validation Findings
+
+### Major Discovery: 2/5 Structures Were Incorrect
+
+**What Happened:**  
+Ran comprehensive validation script on all 5 structures and discovered critical errors.
+
+**Findings:**
+
+✅ **CORRECT (2/5):**
+1. **6W4H** - NSP10-NSP16 methyltransferase ✓  
+   - Validated via Rosas-Lemus et al. (2020)  
+   - Analysis complete and correct  
+
+2. **7DFG** - NSP12-NSP7-NSP8 RdRp ✓  
+   - Validated via Yin et al. (2021)  
+   - Ready for analysis  
+
+⚠️ **COMPLEX (1/5):**
+3. **6XEZ** - RTC with helicase (NSP12 + NSP7 + NSP8 + 2×NSP13)  
+
+🚨 **WRONG (2/5):**
+4. **7EDI** - Spike protein, not NSP14 — DELETED  
+5. **6W9C** - NSP3 PLpro, not NSP13 — DELETED  
+

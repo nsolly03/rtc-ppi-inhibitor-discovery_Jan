@@ -1,0 +1,147 @@
+========================================================================
+BATCH DOWNLOAD AND VALIDATION - CANDIDATE STRUCTURES
+Date: Sat Feb  7 11:52:20 CAT 2026
+========================================================================
+
+DOWNLOADING NSP14 CANDIDATES...
+  ✓ 7N0C
+  ✓ 7DIY
+  ✓ 7MCW
+
+DOWNLOADING NSP13 CANDIDATES...
+  ✓ 6ZSL
+  ✓ 7NIO
+
+VALIDATING ALL CANDIDATES...
+
+VALIDATING 7N0C
+======================================================================
+STRUCTURE INFORMATION - 7N0C
+======================================================================
+
+Chain A: 131 residues (PDB 1-131)
+Chain B: 513 residues (PDB 1-523)
+Chain T: 25 residues (PDB 5-29)
+Chain D: 24 residues (PDB 48-71)
+
+Analyzing chain sizes...
+
+Chain A (131 res) → NSP10
+Chain B (513 res) → NSP14
+Chain T (25 res) → RNA/Substrate/Ligand
+Chain D (24 res) → RNA/Substrate/Ligand
+
+======================================================================
+FINAL ASSIGNMENTS:
+======================================================================
+  NSP12 = NOT FOUND ❌
+  NSP7 = NOT FOUND ❌
+  NSP8 = NOT FOUND ❌
+  NSP13 = NOT FOUND ❌
+  NSP10 = Chain A
+  NSP14 = Chain B
+
+Target Interfaces for Discovery:
+======================================================================
+
+
+VALIDATING 7DIY
+======================================================================
+STRUCTURE INFORMATION - 7DIY
+======================================================================
+
+Chain A: 131 residues (PDB 1-131)
+Chain B: 286 residues (PDB 3-288)
+
+Analyzing chain sizes...
+
+Chain A (131 res) → NSP10
+Chain B (286 res) → Unknown
+
+======================================================================
+FINAL ASSIGNMENTS:
+======================================================================
+  NSP12 = NOT FOUND ❌
+  NSP7 = NOT FOUND ❌
+  NSP8 = NOT FOUND ❌
+  NSP13 = NOT FOUND ❌
+  NSP10 = Chain A
+  NSP14 = NOT FOUND ❌
+
+Target Interfaces for Discovery:
+======================================================================
+
+
+VALIDATING 7MCW
+======================================================================
+STRUCTURE INFORMATION - 7MCW
+======================================================================
+
+Traceback (most recent call last):
+  File "/Users/user/Desktop/Botanique/Project/scripts/validate_structure.py", line 151, in <module>
+    main()
+  File "/Users/user/Desktop/Botanique/Project/scripts/validate_structure.py", line 147, in main
+    validate_structure(pdb_id, pdb_file)
+  File "/Users/user/Desktop/Botanique/Project/scripts/validate_structure.py", line 85, in validate_structure
+    chain_info = analyze_local_structure(pdb_file)
+  File "/Users/user/Desktop/Botanique/Project/scripts/validate_structure.py", line 35, in analyze_local_structure
+    model = next(structure.get_models())
+StopIteration
+
+VALIDATING 6ZSL
+======================================================================
+STRUCTURE INFORMATION - 6ZSL
+======================================================================
+
+Chain B: 585 residues (PDB 2-593)
+Chain A: 572 residues (PDB 1-592)
+
+Analyzing chain sizes...
+
+Chain B (585 res) → NSP13
+Chain A (572 res) → Unknown
+
+======================================================================
+FINAL ASSIGNMENTS:
+======================================================================
+  NSP12 = NOT FOUND ❌
+  NSP7 = NOT FOUND ❌
+  NSP8 = NOT FOUND ❌
+  NSP13 = Chain B
+  NSP10 = NOT FOUND ❌
+  NSP14 = NOT FOUND ❌
+
+Target Interfaces for Discovery:
+  3. NSP13 helicase interfaces
+======================================================================
+
+
+VALIDATING 7NIO
+======================================================================
+STRUCTURE INFORMATION - 7NIO
+======================================================================
+
+Chain A: 590 residues (PDB 0-593)
+Chain E: 585 residues (PDB 2-593)
+
+Analyzing chain sizes...
+
+Chain A (590 res) → NSP13
+Chain E (585 res) → Unknown
+
+======================================================================
+FINAL ASSIGNMENTS:
+======================================================================
+  NSP12 = NOT FOUND ❌
+  NSP7 = NOT FOUND ❌
+  NSP8 = NOT FOUND ❌
+  NSP13 = Chain A
+  NSP10 = NOT FOUND ❌
+  NSP14 = NOT FOUND ❌
+
+Target Interfaces for Discovery:
+  3. NSP13 helicase interfaces
+======================================================================
+
+
+DONE.

@@ -1,0 +1,280 @@
+========================================================================
+COMPREHENSIVE STRUCTURE VALIDATION REPORT
+Date: Sat Feb  7 00:37:08 CAT 2026
+========================================================================
+
+
+########################################################################
+# 6W4H
+########################################################################
+
+======================================================================
+VALIDATING STRUCTURE: 6W4H
+======================================================================
+
+📂 LOCAL FILE ANALYSIS:
+  Chain A: 299 residues (PDB 6798-7096)
+  Chain B: 116 residues (PDB 4271-4386)
+
+🌐 FETCHING OFFICIAL PDB METADATA...
+✓ Title: 1.80 Angstrom Resolution Crystal Structure of NSP16 - NSP10 Complex from SARS-CoV-2
+✓ Release Date: 2020-03-18T00:00:00+0000
+
+📄 PRIMARY CITATION:
+  Title: High-resolution structures of the SARS-CoV-2 2'- O -methyltransferase reveal strategies for structure-based inhibitor design.
+  Authors: Rosas-Lemus, M. et al.
+  Journal: Sci.Signal. (2020)
+
+🧬 OFFICIAL POLYMER ENTITIES:
+  Entity: 2'-O-methyltransferase
+    Chains: A
+    Length: 301 residues
+
+  Entity: Non-structural protein 10
+    Chains: B
+    Length: 142 residues
+
+======================================================================
+✅ VALIDATION SUMMARY:
+======================================================================
+✓ Local file has 2 chains
+✓ Metadata retrieved successfully
+✓ Found 2 polymer entities in PDB database
+
+📋 RECOMMENDED ACTIONS:
+  1. Compare local chain count with official entity count
+  2. Match chain IDs with entity descriptions
+  3. Verify residue counts match expected protein lengths
+  4. Read the primary citation for experimental details
+
+======================================================================
+
+------------------------------------------------------------------------
+
+
+########################################################################
+# 7DFG
+########################################################################
+
+======================================================================
+VALIDATING STRUCTURE: 7DFG
+======================================================================
+
+📂 LOCAL FILE ANALYSIS:
+  Chain P: 12 residues (PDB 9-20)
+  Chain T: 16 residues (PDB 7-22)
+  Chain A: 908 residues (PDB 5-929)
+  Chain B: 117 residues (PDB 75-191)
+  Chain C: 69 residues (PDB 2-70)
+  Chain G: 106 residues (PDB 84-191)
+
+🌐 FETCHING OFFICIAL PDB METADATA...
+✓ Title: Structure of COVID-19 RNA-dependent RNA polymerase bound to favipiravir
+✓ Release Date: 2021-11-17T00:00:00+0000
+
+📄 PRIMARY CITATION:
+  Title: Structural basis for repurpose and design of nucleotide drugs for treating COVID-19
+  Authors: Yin, W. et al.
+  Journal: To Be Published (N/A)
+
+🧬 OFFICIAL POLYMER ENTITIES:
+  Entity: RNA (5'-R(P*AP*GP*AP*UP*UP*AP*AP*GP*UP*UP*AP*U)-3')
+    Chains: P
+    Length: 12 residues
+
+  Entity: RNA (5'-R(P*CP*CP*CP*UP*AP*UP*AP*AP*CP*UP*UP*AP*AP*UP*CP*U)-3')
+    Chains: T
+    Length: 16 residues
+
+  Entity: RNA-directed RNA polymerase
+    Chains: A
+    Length: 943 residues
+
+  Entity: Non-structural protein 8
+    Chains: B,G
+    Length: 199 residues
+
+  Entity: Non-structural protein 7
+    Chains: C
+    Length: 84 residues
+
+======================================================================
+✅ VALIDATION SUMMARY:
+======================================================================
+✓ Local file has 6 chains
+✓ Metadata retrieved successfully
+✓ Found 5 polymer entities in PDB database
+
+📋 RECOMMENDED ACTIONS:
+  1. Compare local chain count with official entity count
+  2. Match chain IDs with entity descriptions
+  3. Verify residue counts match expected protein lengths
+  4. Read the primary citation for experimental details
+
+======================================================================
+
+------------------------------------------------------------------------
+
+
+########################################################################
+# 6XEZ
+########################################################################
+
+======================================================================
+VALIDATING STRUCTURE: 6XEZ
+======================================================================
+
+📂 LOCAL FILE ANALYSIS:
+  Chain A: 926 residues (PDB 4-929)
+  Chain B: 186 residues (PDB 6-191)
+  Chain C: 73 residues (PDB 1-73)
+  Chain D: 186 residues (PDB 6-191)
+  Chain E: 596 residues (PDB 1-596)
+  Chain F: 596 residues (PDB 1-596)
+  Chain P: 34 residues (PDB 2-35)
+  Chain T: 36 residues (PDB 100-135)
+
+🌐 FETCHING OFFICIAL PDB METADATA...
+✓ Title: Structure of SARS-CoV-2 replication-transcription complex bound to nsp13 helicase - nsp13(2)-RTC
+✓ Release Date: 2020-07-29T00:00:00+0000
+
+📄 PRIMARY CITATION:
+  Title: Structural Basis for Helicase-Polymerase Coupling in the SARS-CoV-2 Replication-Transcription Complex.
+  Authors: Chen, J. et al.
+  Journal: Cell (2020)
+
+🧬 OFFICIAL POLYMER ENTITIES:
+  Entity: RNA-directed RNA polymerase
+    Chains: A
+    Length: 932 residues
+
+  Entity: Non-structural protein 8
+    Chains: B,D
+    Length: 199 residues
+
+  Entity: Non-structural protein 7
+    Chains: C
+    Length: 88 residues
+
+  Entity: Helicase
+    Chains: E,F
+    Length: 605 residues
+
+  Entity: Product RNA
+    Chains: P
+    Length: 35 residues
+
+  Entity: Template RNA
+    Chains: T
+    Length: 55 residues
+
+======================================================================
+✅ VALIDATION SUMMARY:
+======================================================================
+✓ Local file has 8 chains
+✓ Metadata retrieved successfully
+✓ Found 6 polymer entities in PDB database
+
+📋 RECOMMENDED ACTIONS:
+  1. Compare local chain count with official entity count
+  2. Match chain IDs with entity descriptions
+  3. Verify residue counts match expected protein lengths
+  4. Read the primary citation for experimental details
+
+======================================================================
+
+------------------------------------------------------------------------
+
+
+########################################################################
+# 7EDI
+########################################################################
+
+======================================================================
+VALIDATING STRUCTURE: 7EDI
+======================================================================
+
+📂 LOCAL FILE ANALYSIS:
+  Chain A: 1024 residues (PDB 27-1144)
+  Chain B: 1016 residues (PDB 27-1143)
+  Chain C: 1008 residues (PDB 27-1143)
+
+🌐 FETCHING OFFICIAL PDB METADATA...
+✓ Title: Cryo-EM structure of SARS-CoV-2 S-UK variant (B.1.1.7), two RBD-up conformation
+✓ Release Date: 2021-09-01T00:00:00+0000
+
+📄 PRIMARY CITATION:
+  Title: Effect of SARS-CoV-2 B.1.1.7 mutations on spike protein structure and function.
+  Authors: Yang, T.J. et al.
+  Journal: Nat.Struct.Mol.Biol. (2021)
+
+🧬 OFFICIAL POLYMER ENTITIES:
+  Entity: Spike glycoprotein
+    Chains: A,B,C
+    Length: 1286 residues
+
+======================================================================
+✅ VALIDATION SUMMARY:
+======================================================================
+✓ Local file has 3 chains
+✓ Metadata retrieved successfully
+✓ Found 1 polymer entities in PDB database
+
+📋 RECOMMENDED ACTIONS:
+  1. Compare local chain count with official entity count
+  2. Match chain IDs with entity descriptions
+  3. Verify residue counts match expected protein lengths
+  4. Read the primary citation for experimental details
+
+======================================================================
+
+------------------------------------------------------------------------
+
+
+########################################################################
+# 6W9C
+########################################################################
+
+======================================================================
+VALIDATING STRUCTURE: 6W9C
+======================================================================
+
+📂 LOCAL FILE ANALYSIS:
+  Chain A: 310 residues (PDB 3-315)
+  Chain B: 307 residues (PDB 3-314)
+  Chain C: 309 residues (PDB 4-314)
+
+🌐 FETCHING OFFICIAL PDB METADATA...
+✓ Title: The crystal structure of papain-like protease of SARS CoV-2
+✓ Release Date: 2020-04-01T00:00:00+0000
+
+📄 PRIMARY CITATION:
+  Title: The crystal structure of papain-like protease of SARS CoV-2
+  Authors: Osipiuk, J. et al.
+  Journal: to be published (N/A)
+
+🧬 OFFICIAL POLYMER ENTITIES:
+  Entity: Non-structural protein 3
+    Chains: A,B,C
+    Length: 317 residues
+
+======================================================================
+✅ VALIDATION SUMMARY:
+======================================================================
+✓ Local file has 3 chains
+✓ Metadata retrieved successfully
+✓ Found 1 polymer entities in PDB database
+
+📋 RECOMMENDED ACTIONS:
+  1. Compare local chain count with official entity count
+  2. Match chain IDs with entity descriptions
+  3. Verify residue counts match expected protein lengths
+  4. Read the primary citation for experimental details
+
+======================================================================
+
+------------------------------------------------------------------------
+
+========================================================================
+VALIDATION COMPLETE
+========================================================================
