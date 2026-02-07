@@ -1,0 +1,20 @@
+Property,Value
+PDB ID,6XEZ
+Analysis Date,2026-02-07
+Structure Type,Supercomplex (5 proteins + RNA)
+,
+COMPOSITION,
+NSP12 (RdRp),Chain A
+NSP7,Chain C
+NSP8,Chain B
+NSP13 Copy 1,Chain E
+NSP13 Copy 2,Chain F
+,
+NSP12-NSP13 INTERFACE,
+Hot Spots Found,1
+Strongest,ASP901-LYS94
+Distance,4.81 Å
+Status,UNIQUE to 6XEZ ⭐
+,
+NSP13-NSP13 INTERFACE,
+Status,None found

@@ -1,0 +1,6 @@
+Interface,Hot Spots,Strongest,Distance,Status
+NSP12-NSP13 Copy 1,1,ASP901-LYS94,4.81 Å,UNIQUE ⭐
+NSP12-NSP13 Copy 2,0,None,-,-
+NSP12-NSP7,1,GLU431-LYS2,2.88 Å,vs 7DFG ✅ Validated
+NSP12-NSP8,3,ASP523-ARG80,4.21 Å,vs 7DFG ⚠️ Different
+NSP13-NSP13,0,None,-,vs 6ZSL

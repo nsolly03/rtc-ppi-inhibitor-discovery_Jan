@@ -1,0 +1,24 @@
+{
+  "pdb_id": "6XEZ",
+  "analysis_date": "2026-02-07",
+  "structure_type": "supercomplex",
+  "composition": {
+    "nsp12": "A",
+    "nsp7": "C",
+    "nsp8": "B",
+    "nsp13_1": "E",
+    "nsp13_2": "F"
+  },
+  "interfaces": {
+    "nsp12_nsp13": {
+      "hot_spots_count": 1,
+      "strongest": {
+        "nsp12_residue": "ASP901",
+        "nsp13_residue": "LYS94",
+        "distance": 4.813652038574219,
+        "type": "Ionic interaction"
+      },
+      "note": "UNIQUE to 6XEZ - RdRp-Helicase coupling"
+    }
+  }
+}
