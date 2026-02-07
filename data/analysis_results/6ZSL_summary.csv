@@ -1,0 +1,23 @@
+Property,Value
+PDB ID,6ZSL
+Analysis Date,2026-02-07
+,
+STRUCTURE TYPE,Homodimer
+Protein,NSP13 (Helicase)
+Chain A,B
+Chain B,A
+,
+HOT SPOTS,
+Total Found,2
+Strongest,ARG390-GLU365
+Distance,3.05 Å
+Type,Salt bridge
+,
+INTERFACE,
+Total Residues,18
+NSP13-A Residues,18
+NSP13-B Residues,0
+,
+GRID BOX,
+Center,"(-3.5, 24.2, -40.1)"
+Size,25 × 25 × 25 Å³

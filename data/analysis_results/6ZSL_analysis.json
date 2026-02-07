@@ -1,0 +1,29 @@
+{
+  "pdb_id": "6ZSL",
+  "analysis_date": "2026-02-07",
+  "structure_type": "homodimer",
+  "protein": "NSP13_helicase",
+  "chains": {
+    "A": "B",
+    "B": "A"
+  },
+  "interface": {
+    "hot_spots_count": 2,
+    "strongest_hot_spot": {
+      "chain_A_residue": "ARG390",
+      "chain_B_residue": "GLU365",
+      "distance": 3.054948091506958,
+      "type": "Salt bridge"
+    },
+    "interface_residues": 18,
+    "grid_box": {
+      "center_x": -3.496999979019165,
+      "center_y": 24.239999771118164,
+      "center_z": -40.08399963378906,
+      "size_x": 25.0,
+      "size_y": 25.0,
+      "size_z": 25.0,
+      "hot_spot": "ARG390-GLU365"
+    }
+  }
+}
