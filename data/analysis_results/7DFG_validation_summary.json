@@ -1,0 +1,18 @@
+{
+  "pdb_id": "7DFG",
+  "interfaces": 2,
+  "nsp12_nsp7": {
+    "interactions": 1656,
+    "strongest": {
+      "residues": "GLU436-LYS7",
+      "distance": 5.603923320770264
+    }
+  },
+  "nsp12_nsp8": {
+    "interactions": 1914,
+    "strongest": {
+      "residues": "ASP421-LYS97",
+      "distance": 7.333301067352295
+    }
+  }
+}
