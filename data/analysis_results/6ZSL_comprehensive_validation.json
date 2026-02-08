@@ -1,0 +1,12 @@
+{
+  "pdb_id": "6ZSL",
+  "analysis_type": "comprehensive_validation",
+  "method": "sidechain_based",
+  "structure_type": "homodimer",
+  "total_interactions": 6028,
+  "strongest": {
+    "residues": "ARG390-GLU365",
+    "distance": 3.054948091506958,
+    "atoms": "NH2-OE1"
+  }
+}
