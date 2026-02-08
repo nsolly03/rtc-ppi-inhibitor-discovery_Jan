@@ -1,0 +1,11 @@
+{
+  "pdb_id": "7N0C",
+  "analysis_type": "comprehensive_validation",
+  "method": "sidechain_based",
+  "total_interactions": 1254,
+  "strongest": {
+    "residues": "LYS93-ASP126",
+    "distance": 2.7841928005218506,
+    "atoms": "NZ-OD2"
+  }
+}
