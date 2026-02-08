@@ -1129,3 +1129,76 @@ Rushing would have missed these insights.
 
 This is publication-quality work completed in record time!
 
+
+---
+
+## February 8, 2026 - Week 4 Day 1: Comprehensive Validation
+
+Test line.
+
+---
+
+## February 8, 2026 - Week 4 Day 1: Comprehensive Validation
+
+**Session Start:** Morning
+**Focus:** Comprehensive sidechain-based validation
+**Goal:** Re-validate all hot spots with proper measurements
+
+### Step 1: 6W4H Comprehensive Validation (In Progress)
+
+Starting with simplest structure to establish validation protocol.
+
+### 6W4H Validation Results (COMPLETE)
+
+**Author Numbering Issue Resolved:**
+- PDB uses polyprotein numbering (not sequential 1-based)
+- NSP10 (Chain B): starts at 4271
+- NSP16 (Chain A): starts at 6798
+
+**K76-D107 in author numbering:**
+- K76 = Chain B #4346 ✅
+- D107 = Chain A #6904 ✅
+
+**VALIDATION RESULTS:**
+
+Top 3 Hot Spots (Sidechain-based):
+
+1. **ASP103-HIS62** (4.55 Å) - NEW #1!
+   - Author#: ASP6900 (Chain A) - HIS4333 (Chain B)
+   - Type: Ionic interaction
+   - Status: NEWLY DISCOVERED (missed in Week 3)
+
+2. **LYS65-GLU48** (6.39 Å)
+   - Author#: LYS6836 (Chain B) - GLU4319 (Chain A)
+   - Type: Ionic interaction
+
+3. **K76-D107** (6.44 Å) - PREVIOUSLY DISCOVERED
+   - Author#: LYS4346 (Chain B) - ASP6904 (Chain A)
+   - Previous CA-CA: 5.15 Å
+   - Current sidechain: 6.44 Å
+   - Status: WEAKER than CA-CA measurement!
+
+**CRITICAL FINDING:**
+
+K76-D107 is actually WEAKER (6.44 Å) than the CA-CA distance (5.15 Å)!
+
+This is unusual and suggests:
+1. CA-CA measurement was lucky (atoms happened to be close)
+2. Sidechains point AWAY from each other
+3. Not a real salt bridge
+
+**NEW #1 HOT SPOT:**
+- ASP103-HIS62: 4.55 Å
+- This is the TRUE strongest interaction!
+- Missed in Week 3 initial analysis
+
+**Impact:**
+- 6W4H ranking will CHANGE
+- K76-D107 drops in priority
+- ASP103-HIS62 becomes primary target
+
+**Next Steps:**
+1. Update 6W4H results with ASP103-HIS62 as #1
+2. Recalculate overall rankings
+3. Continue validation of other structures
+

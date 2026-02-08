@@ -1,0 +1,11 @@
+{
+  "pdb_id": "6W4H",
+  "analysis_type": "comprehensive_validation",
+  "method": "sidechain_based",
+  "total_interactions": 600,
+  "strongest": {
+    "residues": "ASP6900-HIS4333",
+    "distance": 4.546179294586182,
+    "atoms": "OD2-NE2"
+  }
+}
